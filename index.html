@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--This is the preloader of my portfolio-->    
+    <div class="loader">
+        <img src="img/preloader.gif" alt="preloader">
+    </div>
+    <!--This is the header of my portfolio--> 
+    <header>
+    <!--This is the nav of my portfolio--> 
+        <nav class="nav">
+            <ul class="nav_menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a_propos">A propos</a></li>
+                <li><a href="#project">Projets</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact">
+        <ul class="contact_menu">
+            <li><a href="https://www.instagram.com/tristan_retali/?hl=fr"><img src="img/instagram_logo.png" alt="instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/tristan-retali-9027b1233/"><img src="img/linkedin_logo.jpg" alt="linkedin"></a></li>
+        </ul>
+    </div>
+    <div class="mail">
+        <a href="mailto:tristan.retali@gmail.com"><p>tristan.retali@gmail.com</p></a>
+    </div>
+    <!--This is the main of my portfolio-->
+    <main>
+       <section class="accueil_section" id="accueil">
+            <div class="text">
+                <h3>Bonjour, je suis</h3>
+            </div>
+            <div class="text">
+                <h1>Tristan Retali</h1>
+            </div>
+            <div class="text">
+                <h3>Etudiant en BUT Informatique</h3>                
+            </div>
+            <div class="next">
+                <a href="#a_propos"><img src="img/arrow_down.png" alt="next_section"></a>
+            </div>
+        </section>
+        <section class="a_propos_section" id="a_propos">
+            <div class="identite">
+                <div class="profil">
+                    <img src="img/photo_profil.png" alt="photo de profil">
+                </div>
+                <div class="profil">
+                    <p>Je m'appelle Tristan Retali, jeune étudiant de 19 ans en BUT Informatique où je suis formé à l'apprentissage de différents languages de programmation que vous pourrez voir ci-dessous: </p>
+                    <div class="description_languages">
+                        <ul class="languages">
+                            <li><p>Java</p> </li>
+                            <li><p>HTML/CSS</p> </li>
+                            <li><p>C#</p></li>
+                        </ul>
+                        <ul class="languages">
+                            <li><p>SQL</p></li>
+                            <li><p>Python</p></li>
+                            <li><p>Bash</p></li>
+                        </ul>
+                    </div>
+                    <p>Je possède également d'autres conpétences, l'été 2021 j'ai été saisonnier dans un intermarché, ce qui m'a permis d'acquérir de l'expérience dans le domaine de la vie en entreprise. Je sais également m'adapter aux conditions de travail et faire preuve de rigueur lorsque cela s'avère nécessaire.</p>
+                </div>
+            </div>
+            <div class="next_project">
+                <a href="#project"><img src="img/arrow_down.png" alt="next_section"></a>
+            </div>
+        </section>
+        <section class="project_section" id="project">
+            <div class="projects">
+                <div class="logo" id="java_zone">
+                    <div id="java">
+                        <img src="img/java_logo.png" alt="logo_java">
+                    </div>
+                    <div class="project_area" id="java_area">
+                        <div class="work" id="pong">
+                            <a href="retex/fiche_Retex_Pong.pdf">
+                                <p>Pong</p>
+                                <img src="img/pong.png" alt="pong_game">                            
+                            </a>                        
+                        </div>
+                        <div class="work" id="lowatem">
+                            <a href="retex/fiche_Retex_Pong.pdf">
+                                <p>Lowatem</p>
+                                <img src="img/lowatem.PNG" alt="lowatem_game">                            
+                            </a>                        
+                        </div>
+                    </div>    
+                </div>
+                <div class="logo" id="html_zone">
+                    <div id="html_css">
+                        <img src="img/html_logo.webp" alt="logo_html_css">
+                    </div>
+                    <div class="project_area" id="html_css_area">
+                        <div class="work" id="nerdit">
+                            <a href="retex/fiche_Retex_Pong.pdf">
+                                <p>Nerd.it</p>
+                                <img src="img/nerd_it.png" alt="nerdit_website">
+                            </a>
+                        </div>
+                        <div class="work" id="portfolio">
+                            <a href="retex/fiche_Retex_Pong.pdf">
+                                <p>Portfolio</p>
+                                <img src="img/portfolio.png" alt="portfolio_website">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="img/c_sharp_logo.png" alt="logo_c#">
+                </div>
+                <div class="logo" id="sql_zone">
+                    <div id="sql">
+                        <img src="img/sql_logo.png" alt="logo_sql">
+                    </div>
+                    <div class="project_area" id="sql_area">
+                        <div class="work" id="bd_vin">
+                            <a href="retex/fiche_Retex_Pong.pdf">
+                                <p>Grave & Cie</p>
+                                <img src="img/vin.webp" alt="grave_cie_bd">
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+                <div class="logo" id="bash_zone">
+                    <div id="bash">
+                        <img src="img/bash_logo.png" alt="logo_bash">
+                    </div>
+                    <div class="project_area" id="bash_area">
+                        <div class="work" id="storyboard_project">
+                            <a href="retex/fiche_Retex_Pong.pdf">
+                                <p>Storyboard</p>
+                                <img src="img/storyboard.png" alt="storyboard">
+                            </a>
+                        </div> 
+                        <div class="work" id="virtual_machine">
+                            <a href="retex/fiche_Retex_Pong.pdf">
+                                <p>Machine Virtuelle</p>
+                                <img src="img/virtual_machine.webp" alt="machine_virtuelle">
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>       
+    </main>
+    <footer id="footer">
+        <div class="mail_bottom">
+            <img src="img/arobase.webp" alt="arobase">
+            <a href="mailto:tristan.retali@gmail.com"><p>tristan.retali@gmail.com</p></a>
+        </div>
+        <div class="contact_bottom">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/tristan-retali-9027b1233/"><img src="img/linkedin_logo.jpg" alt="linkedin_bottom"></a>
+            </div>
+            <div class="instagram">
+               <a href="https://www.instagram.com/tristan_retali/?hl=fr"><img src="img/instagram_logo.png" alt="instagram_bottom"></a> 
+            </div>
+        </div>
+        <div class="tel">
+            <img src="img/tel.png" alt="telephone">
+            <p>06.01.29.47.63</p>
+        </div>
+    </footer>   
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
