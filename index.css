@@ -301,7 +301,6 @@ footer p{
 }
 .contact_bottom{
     display: flex;
-
     width: 10%;
     align-items: center;
     justify-content: center;
@@ -353,12 +352,14 @@ footer p{
 
 /* Responsive for width */
 @media(max-width : 800px){
-    .loader img{
-        width: 100px;
-        height: 100px;
+    .loader{
+        display: none;
+    }
+    .disapear{
+        display: none;
     }
     .nav{   
-        height: 5%;
+        height: 7%;
     }
     .contact{
         display: none;
@@ -367,11 +368,36 @@ footer p{
         display: none;
     }
     main{
-        margin: 0 0;
         background-color: aqua;
+        width: 100%;
+        height: 100%;
+        margin: 0 0;
+    }
+    body{
+        background-color: red;
+    }
+    section{
+        margin: 0 0;
+        padding-top: 0;
+        padding-bottom: 250px;
+        width: 100%;
     }
     .accueil_section{
+        padding-top: 0;
         background-color: yellow;
+    }
+    .text{
+        background-color: black;
+        width: 370px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .a_propos_section{
+        background-color: black;
     }
 }
 
