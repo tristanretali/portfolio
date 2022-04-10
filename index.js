@@ -7,10 +7,20 @@ function fadeOut(){
     loader.classList.add("disapear");
 }
 
-/* Hide nav with scroll up and scroll down */
+/* All const for the nav js of my portfolio */
+const hamburgerButton = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav_menu");
 const hideNav = document.querySelector(".nav");
 const hideContact = document.querySelector(".contact");
 const hideMail = document.querySelector(".mail");
+
+/* responsive for navbar */
+hamburgerButton.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hideNav.classList.toggle('newheight');
+})
+
+/* Hide nav with scroll up and scroll down */
 let oldScrollY = window.scrollY;
 
 window.addEventListener("scroll", scrollHideNav);

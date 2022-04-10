@@ -47,6 +47,21 @@ body{
     transition: 1s;
     transform: translateY(-100px);    
 }
+.hamburger{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+.hamburger .line{
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+}
 .nav_menu{
     display: flex;
     justify-content: space-around;
@@ -81,7 +96,6 @@ nav ul li a:hover::after{
 main{
     width: 100%;
 }
-
 /* Contact bottom css */
 .contact{
     position: fixed;
@@ -124,7 +138,7 @@ main{
     position: fixed;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
 }
 .mail_hidden{
@@ -286,7 +300,6 @@ footer{
     display: flex;
     justify-content: space-between;
     height: 20%;
-    height: 75px;
 }
 footer p{
     font-size: 20px;
@@ -320,7 +333,6 @@ footer p{
 }
 
 .tel{
-
     display: flex;
     align-items: center;
     width: 20%;
@@ -351,15 +363,39 @@ footer p{
 }
 
 /* Responsive for width */
-@media(max-width : 800px){
-    .loader{
-        display: none;
+@media(max-width : 800px){    
+    h3{
+        font-size: 25px;
     }
-    .disapear{
-        display: none;
+    h1{
+        font-size: 35px;
     }
-    .nav{   
+    p{
+        font-size: 15px;
+    }
+    .nav{
         height: 7%;
+    }
+    .newheight{
+        height: auto;
+    }
+    .nav_hidden{
+        transform: translateY(-200px);    
+    }
+    .nav_menu{
+        width: 100%;
+        flex-direction: column;
+        padding-top: 10%;
+        padding-right: 2%;
+        align-items: flex-end;
+        display: none;
+        transition: 1s;
+    }
+    .active{
+        display: flex;
+    }
+    .hamburger{
+        display: flex;
     }
     .contact{
         display: none;
@@ -368,36 +404,47 @@ footer p{
         display: none;
     }
     main{
-        background-color: aqua;
         width: 100%;
-        height: 100%;
-        margin: 0 0;
-    }
-    body{
-        background-color: red;
+        padding: 0;    
     }
     section{
-        margin: 0 0;
-        padding-top: 0;
-        padding-bottom: 250px;
+        margin: 0;
+        padding: 0;
         width: 100%;
     }
-    .accueil_section{
-        padding-top: 0;
-        background-color: yellow;
-    }
     .text{
-        background-color: black;
-        width: 370px;
-    }
-    h3{
-        font-size: 25px;
-    }
-    h1{
-        font-size: 35px;
+        width: 85%;
     }
     .a_propos_section{
+        padding-bottom: 25%;
+    }
+    .identite{
+        flex-direction: column;
+    }
+    .profil{
+        padding: 0;
+    }
+    .description_languages{
+        flex-direction: column;
+    }
+    .languages{
+        margin: 0;
+        padding: 0;
+    }
+    #java_area, #html_css_area, #sql_area, #bash_area{
+        flex-direction: column;
+    }
+    #java_zone, #html_zone, #sql_zone, #bash_zone{
+        width: 100%;
+    }
+    footer{
         background-color: black;
+        width: 100%;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .tel{
+        width: auto;
     }
 }
 
