@@ -31,7 +31,7 @@ function scrollHideNav(){
     }else{
         hideNav.classList.remove("nav_hidden");
     }
-    if (oldScrollY >= 2200) {
+    if (oldScrollY >= 100) {
         hideContact.classList.add("contact_hidden");
         hideMail.classList.add("mail_hidden");
     } else {

@@ -385,8 +385,8 @@ footer p{
     .nav_menu{
         width: 100%;
         flex-direction: column;
-        padding-top: 10%;
-        padding-right: 2%;
+        margin-top: 10%;
+        margin-right: 2%;
         align-items: flex-end;
         display: none;
         transition: 1s;
@@ -437,14 +437,27 @@ footer p{
     #java_zone, #html_zone, #sql_zone, #bash_zone{
         width: 100%;
     }
-    footer{
-        background-color: black;
-        width: 100%;
-        text-align: center;
-        justify-content: space-between;
+    footer p{
+        font-size: 12px;
+    }
+    .mail_bottom{
+        width: auto;
     }
     .tel{
         width: auto;
+    }
+    [alt="arobase"], [alt="telephone"]{
+        width: 20px;
+        height: 20px;
+    }
+    [alt="instagram_bottom"]{
+        width: 20px;
+        height: 20px;
+    }
+    
+    [alt="linkedin_bottom"]{
+        width: 45px;
+        height: 30px;
     }
 }
 
