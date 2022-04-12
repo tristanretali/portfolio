@@ -45,7 +45,6 @@ function scrollHideNav(){
 
 /*  Hide and show Java project */ 
 const javaZone = document.querySelector("#java_zone");
-/*const javaProjectArea = document.getElementById("java");*/
 const showJavaProjects = document.querySelector("#java_area");
 
 javaZone.addEventListener("mouseover", () => {
