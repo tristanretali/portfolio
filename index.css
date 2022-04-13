@@ -305,7 +305,7 @@ p{
 }
 .next_project{
     width: 100%;
-    margin-top: 0.5%;
+    margin-top: 3%;
     text-align: center;
     position: absolute;
     left: 0;
@@ -341,7 +341,7 @@ p{
     width: 100%;
 }
 #java_zone, #html_zone, #sql_zone, #bash_zone{
-    width: 138vh;
+    width: 70%;
     transition: 1.25s;
 }
 .work p{
