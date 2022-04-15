@@ -305,7 +305,7 @@ p{
 }
 .next_project{
     width: 100%;
-    margin-top: 3%;
+    margin-top: 0.5%;
     text-align: center;
     position: absolute;
     left: 0;
@@ -333,6 +333,9 @@ p{
     width: 160px;
     height: 100px;
     margin-bottom: 40px;
+}
+#nerdit img, #portfolio img{
+    width: 200px;
 }
 #java_area, #html_css_area, #sql_area, #bash_area{
     display: none;
