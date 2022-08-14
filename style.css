@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+:root{
+    --bg-preloader-color: #071015;
+    --bg-color: #13222C;
+    --first-color: #98a3e0;
+    --second-color: #d7d6ea;
+    --third-color: #56648e;
+    --list-color : #9b63af;
+}
+
+*{
+    padding: 0;
+    margin: 0;   
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg-color);
+}
+p{
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+h3{
+    color: var(--third-color);
+    font-size: 50px;
+}
+h1{
+    color: var(--first-color);
+    font-size: 70px;
+}
+.preloader{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+}
+.hidden{
+    animation: disapear 1s forwards;
+}
+@keyframes disapear{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.open_portfolio{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    padding: 20px 30px;
+    transform: translate(-50%, -50%);
+    color: var(--second-color);
+    background-color: var(--bg-preloader-color);
+    letter-spacing: 2px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.open_portfolio:before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--third-color);
+    border-radius: 15px;
+    transition: transform 0.7s;
+    transform-origin: bottom right;
+    transform: scale(0);
+}
+.open_portfolio:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid var(--third-color);
+    border-radius: 15px;;
+    transition: transform 0.7s;
+    transform-origin: top left;
+    transform: scale(1);  
+}
+.open_portfolio:hover:before{
+    transition: transform 0.7s;
+    transform-origin: top left;
+    transform: scale(1);  
+}
+.open_portfolio:hover:after{
+    transition: transform 1s;
+    transform-origin: bottom right;
+    transform: scale(0);  
+}
+#canvas1{
+    position: absolute;
+    background-color: var(--bg-preloader-color);
+    width: 100%;
+    height: 100%;
+}
+.header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 14%;
+    height: 100%;
+    left: -9%;
+    transition: left 1.5s ease;
+}
+.header:hover{
+    left: 0;
+}
+
+.header p::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--first-color);
+    margin: auto;
+    display: block;
+}
+.header p:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+.nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.nav_menu p{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+ion-icon{
+    color: var(--first-color);
+}
+.home{
+    margin-top: 10px;
+}
+.home p{
+    
+    margin-right: 40px;
+}
+.home, .about_me, .project, .mail, .instagram, .linkedin{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.social_media p{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.mail p{
+    margin-right: 70px;
+}
+.linkedin p{
+    margin-right: 40px;
+}
+main{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding:0 100px;
+}
+section{
+    min-height: 100vh;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+span.fade{
+    opacity: 1;
+}
+#about_section, #projects_section{
+    display: none;
+}
+.about{
+    justify-content: center;
+    align-items: center;
+}
+.first_about_part{
+    margin-right: 30px;
+}
+.my_photo{
+    width: 18%;
+}
+.my_photo img{
+    width: 250px;
+    height: 285px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+.cv{
+    text-align: center;
+    padding-top: 15%;
+}
+.cv_button{
+    position: relative;
+    color: var(--first-color);
+    font-size: 25px;
+    margin: 3% 0;  
+    font-weight: bold; 
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: var(--first-color) 3px solid;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-shadow: 0 0 8px var(--first-color), 
+    0 0 6px hsl(0 0% 100%/ 0.20);
+    box-shadow: inset 0 0 15px var(--first-color),
+    0 0 25px var(--first-color);
+    transition: background-color 200ms linear;
+}
+
+.cv_button::before{
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    background-color: var(--first-color);
+    border-radius: 30px;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(40px) rotateX(60deg) translateZ(-5px) scale(1, 0.55);
+    filter: blur(15px);
+    opacity: 0.6;
+}
+.cv_button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 10px var(--first-color);
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+.cv_button:hover{
+    background-color: var(--first-color);
+    color:var(--third-color);
+}
+.cv_button:hover::before{
+    opacity: 1;
+}
+.cv_button:hover::after{
+    opacity: 1;
+}
+.short_description{
+    width: 35%;
+}
+.all_languages{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.languages{
+    color: var(--first-color);
+    font-weight: bold;
+    list-style-type: none;
+}
+li{
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+.languages li::before{
+    content: "\25C8 ";
+    color: var(--list-color);
+    margin-right: 10px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding-left: 13%;
+    padding-top: 3%;
+}
+.projects_row{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    margin-right: 40px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid var(--first-color);
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover > .card_body.card_image > img{
+    transform: scale(1.025);
+}
+.card_body{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.card_body p{
+    font-size: 30px;
+}
+.card_body.card_image > img{
+    padding: 4% 2%;
+    width: 100%;
+    height: 86%;
+    transition: 200ms transform ease-in-out;
+}
+.card_footer{
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.btn{
+    border: none;
+    background-color: var(--third-color);
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 15px;
+    padding:5%;
+    margin-left: 5%;
+    border-radius: 1%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:hover, .btn:focus{
+    background-color: var(--first-color);
+    color: var(--third-color);
+}
+footer{
+    display: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+@media(max-height : 600px){
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .my_photo img{
+        width: 200px;
+        height: 235px;
+    }
+    .cv_button{
+        font-size: 20px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .projects_row{
+        margin-top: 65px;
+    }   
+}
+@media(max-width : 800px){
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 8px;
+    }
+    ion-icon{
+        display: none;
+    }
+    .home{
+        margin-left: 8px;
+    }
+    .mail{
+        margin-left: 20px;
+    }
+    .instagram{
+        margin-left: 2px;
+    }
+    .linkedin{
+        margin-left: 12px;
+    }
+    .projects_row{
+        flex-direction: column;
+    }
+    .header{
+        left: 0%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .first_about_part{
+        padding-left: 30px;
+    }
+    .my_photo img{
+        width: 150px;
+        height: 185px;
+    }
+    .cv_button{
+        font-size: 15px;
+    }
+    .short_description{
+        margin-top: 80px;
+        width: 100%;
+    }
+    .short_description p{
+        font-size: 13px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .projects{
+        padding-left: 5%;
+    }
+    .card{
+        width: 220px;
+        height: 300px;
+        margin-top: 30px;
+    }
+    .footer p{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+}
