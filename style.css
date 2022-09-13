@@ -178,7 +178,11 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
+}
+.content{
+    position : absolute;
+    left: 35%;
 }
 span{
     opacity: 0;
@@ -363,7 +367,7 @@ footer{
     }
     .my_photo img{
         width: 200px;
-        height: 235px;
+        height: 250px;
     }
     .cv_button{
         font-size: 20px;
