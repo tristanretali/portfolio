@@ -38,7 +38,7 @@ enterButton.addEventListener('click', function(event){
     setTimeout(animThirdLine, 4000);
     aboutSection.style.display = "flex";
     projectsSection.style.display = "flex";
-    footerArea.style.display = "block";
+    footerArea.style.display = "flex";
 })
 
 function animFirstLine(){
