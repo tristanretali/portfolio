@@ -7,8 +7,20 @@
     --third-color: #56648e;
     --list-color : #9b63af;
 }
-
-*{
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--bg-color);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid var(--first-color);  /* creates padding around scroll thumb */
+}
+*{ 
     padding: 0;
     margin: 0;   
     text-decoration: none;
