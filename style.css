@@ -161,18 +161,20 @@ ion-icon{
     
     margin-right: 40px;
 }
-.home, .about_me, .project, .mail, .instagram, .linkedin{
+.home, .about_me, .project, .mail, .github, .linkedin{
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
 }
 .social_media p{
-    margin-right: 10px;
     margin-top: 5px;
 }
 .mail p{
     margin-right: 70px;
+}
+.github p{
+    margin-right: 50px;
 }
 .linkedin p{
     margin-right: 40px;
@@ -198,7 +200,7 @@ section{
 }
 span{
     opacity: 0;
-    transition: all 1.5s ease;
+    transition: all 1.0s ease;
 }
 span.fade{
     opacity: 1;
@@ -415,7 +417,7 @@ footer{
     .mail{
         margin-left: 20px;
     }
-    .instagram{
+    .github{
         margin-left: 2px;
     }
     .linkedin{
