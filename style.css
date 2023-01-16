@@ -343,7 +343,7 @@ li{
     font-size: 30px;
 }
 .card_body.card_image > img{
-    padding: 4% 2%;
+    padding: 1% 2%;
     width: 100%;
     height: 86%;
     transition: 200ms transform ease-in-out;
