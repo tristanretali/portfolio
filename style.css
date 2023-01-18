@@ -374,29 +374,14 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
-@media(max-height : 600px){
-    h1{
-        font-size: 50px;
-    }
-    h3{
-        font-size: 40px;
-    }
-    p{
-        font-size: 15px;
-    }
-    .my_photo img{
-        width: 200px;
-        height: 250px;
-    }
-    .cv_button{
-        font-size: 20px;
-    }
-    li{
-        font-size: 12px;
-    }
+@media(max-height : 1000px){
     .projects_row{
         margin-top: 65px;
     }   
+    .card{
+        margin-right: 40px;
+        width: 350px;
+    }
 }
 @media(max-width : 800px){
     h1{
